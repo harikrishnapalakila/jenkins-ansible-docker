@@ -6,4 +6,7 @@
 <body><br/><br/><br/><br/><br/><center><h2><% String a=session.getAttribute("username").toString(); out.println("Hello "+a); %></h2><br/><br/><br/><br/><br/><br/><br/><a href="Logout.jsp">Logout</a></center></body>
 </html>
 
-Read more: https://harikrishnapalakila.com
+<center>
+ <h2>About</h2>
+ <p>Read more: https://harikrishnapalakila.com</p>
+</center>
