@@ -6,4 +6,8 @@
 <body><% session.removeAttribute("username"); session.removeAttribute("password"); session.invalidate(); %><h1>Logout was done successfully.</h1></body>
 </html>
 
-Read more: https://github.com/harikrishnapalakila
+
+<center>
+ <h2>About</h2>
+ <h3>Read more: https://harikrishnapalakila.com</h3>
+</center>
