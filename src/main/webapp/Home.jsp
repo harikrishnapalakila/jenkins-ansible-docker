@@ -8,5 +8,5 @@
 
 <center>
  <h2>About</h2>
- <p>Read more: https://harikrishnapalakila.com</p>
+ <h3>Read more: https://harikrishnapalakila.com</h3>
 </center>
