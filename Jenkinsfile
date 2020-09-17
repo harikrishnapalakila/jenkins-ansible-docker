@@ -20,11 +20,9 @@ pipeline{
     }
     stages{
         stage("Initialize") {
-        steps {
-            script {
-                notifyBuild('STARTED.......!')
-             }
-         }
+             steps{
+                sh "echo build has started....!!"
+              }
         }
         stage('SCM'){
             steps{
