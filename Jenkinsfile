@@ -6,6 +6,12 @@ pipeline{
     environment {
       DOCKER_TAG = getVersion()
     }
+    options {
+    buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '10', numToKeepStr: '10'))
+    timestamps()
+    retry(3)
+    timeout time:10, unit:'MINUTES'
+    }
     parameters {
     string      (defaultValue: "master", description: 'Branch Specifier', name: 'SPECIFIER')
     booleanParam(defaultValue: false, description: 'Deploy to QA Environment ?', name: 'DEPLOY_QA')
