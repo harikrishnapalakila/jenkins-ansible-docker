@@ -19,6 +19,13 @@ pipeline{
     booleanParam(defaultValue: false, description: 'Deploy to PROD Environment ?', name: 'DEPLOY_PROD')
     }
     stages{
+        stage("Initialize") {
+        steps {
+            script {
+                notifyBuild('STARTED.......!')
+             }
+         }
+        }
         stage('SCM'){
             steps{
                 git credentialsId: 'github', 
