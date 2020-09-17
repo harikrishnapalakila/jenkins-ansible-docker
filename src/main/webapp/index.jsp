@@ -9,3 +9,8 @@
 </body>
 </html>
 
+<center>
+ <h2>About</h2>
+ <h3>Read more: https://harikrishnapalakila.com</h3>
+</center>
+
